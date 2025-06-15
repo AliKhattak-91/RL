@@ -201,7 +201,7 @@ def main():
                 snake.snake.pop()
 
         # Win condition
-        if human.score >= 3 or ai.score >= 10:
+        if human.score >= 20 or ai.score >= 20:
             show_winner(human, ai)
             running = False
             break
@@ -214,7 +214,7 @@ def main():
         if not human.alive or not ai.alive:
             show_winner(human, ai)
             running = False
-            break
+            break 
 
         draw_snake(display, human)
         draw_snake(display, ai)
